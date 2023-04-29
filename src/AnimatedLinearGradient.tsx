@@ -4,7 +4,7 @@ import _ from 'lodash';
 
 import NativeLinearGradient, {
   LinearGradientProps,
-} from 'react-native-linear-gradient';
+} from 'expo-linear-gradient';
 
 type IProps = LinearGradientProps & {
   [animatedColor: string]: string;
@@ -35,6 +35,7 @@ class LinearGradient extends Component<IProps> {
     const nativeLinearProps = _.omit(props, Object.keys(colorsArray));
 
     return (
+      // @ts-ignore
       <NativeLinearGradient {...nativeLinearProps} colors={colorsArray}>
         {children}
       </NativeLinearGradient>

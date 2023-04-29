@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Easing, Animated } from 'react-native';
 import _ from 'lodash';
 import AnimatedLinearGradient from './AnimatedLinearGradient';
-import type { LinearGradientProps } from 'react-native-linear-gradient';
+import type { LinearGradientProps } from 'expo-linear-gradient';
 
 export interface IProps extends LinearGradientProps {
   animation?: Animated.TimingAnimationConfig;
